@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:Contato:.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a href="project.html" style="display: none;">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <div class="center">
+        <img src="./img/lucas.jpg" alt="">
+    </div>
+    <section class="titulo">
+        <div class="name">
+            <h1>Lucas Lacerda</h1>
+            <h2>Front End Developer</h2>
+        </div>
+    </section>  
+
+    <div class="contactme">
+        <form action="https://formsubmit.co/d5d3e1aafd2717572de55d408ecfe022 " method="POST">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email"required placeholder="Email">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <input type="text" name="texto" id="mensagem" required placeholder="Deixe sua mensagem" >
+            </div>
+            <button type="submit" id="botao">Enviar</button> 
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+            <!-- <input type="hidden" name="_subject" value="New submission!"> -->
+        </form>
+    </div>
+</main>
+    <footer>
+        <a  id="imgColorida" href="https://www.linkedin.com/in/lacerdalukas/" target="_blank" rel="noopener noreferrer ">
+        <img src="./img/linkedin.svg" alt=""></img>
+
+        </a>
+        <a   id="imgColorida" href="https://github.com/poxalukas" target="_blank" rel="noopener noreferrer">
+            <img src="./img/github.svg" alt=""></img>
+
+        </a>
+
+        <a  id="imgColorida" href="https://api.whatsapp.com/send?phone=5562993989583&amp;text=Olá.%20Gostaria%20de%20fazer%20um%20projeto.%20" target="_blank" rel="noopener noreferrer"> 
+            <img src="./img/whats.svg" alt=""></img>
+
+        </a>
+    </footer>
+
+</body>
+</html>

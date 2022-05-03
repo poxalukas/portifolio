@@ -1,0 +1,185 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    float: right;
+
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+    margin-bottom: 10px;
+
+} 
+
+main img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin-top: 10px;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;    
+
+}
+
+.titulo .name h1{
+    font-size: 60px;
+}
+
+.titulo .name h2{
+    font-size: 25px;
+}
+
+#sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+footer{    
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0px;
+    
+}
+
+footer a{
+    margin: 10px;
+    text-align: center;
+
+}
+
+footer p{
+    font-size: 15px;
+}
+
+footer img{
+    width: 40;
+    height: 40px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+#imgColorida{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+     
+}
+ 
+#imgColorida:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+
+nav a:hover{
+    color: white;
+    transition: 300ms;
+}
+
+input{
+    width: 99%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+
+input[type=text]{
+    height: 100px;
+}
+
+button{
+    background: linear-gradient(to right, #c09717 50%, #9c551b 50%);
+    background-size:  200% 100%;
+    background-position: right bottom;
+    border-radius: 30px;
+    height: 30px;
+    width: 15%;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease-out;
+}
+
+#botao:hover {
+    background-position: left bottom;
+}
+
+#arrow{
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -10px ;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+    transition: 300ms;
+}
+
+.contactme form{
+    width: 600px;
+    display:flexbox;
+    margin: 0 auto;
+}
+
+.skills{
+    text-align: center;
+    margin-top: -20px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.skills ul{
+
+    display: flexbox;
+    float: center;
+    margin: 0 auto;
+    list-style: none;
+    width: 600pX;
+}
