@@ -162,7 +162,7 @@ button{
 }
 
 .contactme form{
-    width: 600px;
+    width: 100%;
     display:flexbox;
     margin: 0 auto;
 }
