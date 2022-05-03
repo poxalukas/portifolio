@@ -5,6 +5,9 @@
     color: #a09038;
     font-family: Arial, Helvetica, sans-serif;
 }
+.container{
+    width: 100%;
+}
 
 header ul{
     list-style: none;
@@ -27,7 +30,8 @@ header{
     justify-content: end;
     margin-right: 10%;
     margin-bottom: 10px;
-
+    font-size: 20px;
+    font-weight: 1000;
 } 
 
 main img{
@@ -62,14 +66,20 @@ main img{
     text-align: justify;
 }
 
-footer{    
-    display: flex;
-    justify-content: center;
-    bottom: 0px;
-    position: relative;
-    width: 100%;
-    margin-bottom: 0px;
+@media only screen and(max-width: 600px){
     
+}
+
+footer{    
+    position: fixed;
+    width: 100%;
+    margin: 0 0;
+    bottom: 5%;
+}
+footer .links{
+    display: flex;
+    flex-direction: end;
+    justify-content: center;
 }
 
 footer a{
@@ -159,27 +169,42 @@ button{
 .active{
     display: block !important;
     transition: 300ms;
+    margin-top: -20px;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+    }
+  }
+
 .contactme form{
-    width: 100%;
+    width: 50%;
     display:flexbox;
     margin: 0 auto;
 }
 
 .skills{
     text-align: center;
-    margin-top: -20px;
     margin-top: 10px;
     font-weight: 600;
     font-size: 20px;
-}
 
-.skills ul{
-
-    display: flexbox;
-    float: center;
-    margin: 0 auto;
-    list-style: none;
-    width: 600pX;
 }
